@@ -1,0 +1,25 @@
+{
+  "conditions": [
+    {
+      "name": "Influenza",
+      "symptoms": {"fever": 0.4, "cough": 0.3, "fatigue": 0.2},
+      "risk_modifiers": {"immunocompromised": 0.3},
+      "recommended_tests": ["Rapid influenza diagnostic test"],
+      "contraindications": {"pregnant": "Use caution with antiviral medications; consult obstetrics."}
+    },
+    {
+      "name": "Pneumonia",
+      "symptoms": {"fever": 0.3, "cough": 0.4, "shortness of breath": 0.4},
+      "risk_modifiers": {"smoker": 0.2, "elderly": 0.3},
+      "recommended_tests": ["Chest X-ray", "Complete blood count"],
+      "contraindications": {"pregnant": "Avoid ionizing radiation when possible."}
+    },
+    {
+      "name": "Urinary Tract Infection",
+      "symptoms": {"dysuria": 0.5, "frequency": 0.3, "fever": 0.2},
+      "risk_modifiers": {"female": 0.2, "pregnant": 0.3},
+      "recommended_tests": ["Urinalysis", "Urine culture"],
+      "contraindications": {"renal_impairment": "Adjust antibiotic dosing for renal function."}
+    }
+  ]
+}

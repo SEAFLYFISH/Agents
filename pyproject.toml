@@ -1,0 +1,26 @@
+[project]
+name = "medical-test-agents"
+version = "0.1.0"
+description = "A modular agent system for recommending medical tests based on patient symptoms."
+authors = [{ name = "Medical AI Team", email = "ai-team@example.com" }]
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = [
+    "typer>=0.9"
+]
+
+[project.urls]
+Homepage = "https://example.com/medical-test-agents"
+Documentation = "https://example.com/medical-test-agents/docs"
+
+[project.scripts]
+medical-test-agents = "medical_test_agents.cli:app"
+
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+addopts = "-q"
